@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sobigasri S — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f1f6f6;--surface:#ffffff;--ink:#14282e;--muted:#4b6168;--line:#cfdcde;
+  --teal:#0e6b73;--amber:#b86e00;--chip:#e0eeee;
+  --g1:#3f9f6b;--g2:#d9b72a;--g3:#e58a2b;--g4:#cf4b3f;--g5:#7a3f8f;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1c20;--surface:#162a30;--ink:#e6f1f2;--muted:#9bb3b8;--line:#27414a;--teal:#5cc3cb;--amber:#f0b04f;--chip:#1d3740;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0f1c20;--surface:#162a30;--ink:#e6f1f2;--muted:#9bb3b8;--line:#27414a;--teal:#5cc3cb;--amber:#f0b04f;--chip:#1d3740;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:19px;line-height:1.6}
+h1,h2,h3,.sans{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:20px;flex-wrap:wrap;padding:20px 0;font-family:"Bricolage Grotesque",Arial,sans-serif;font-size:15px;font-weight:500}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--teal)}
+.hero{padding:56px 0 48px}
+.hero h1{font-size:clamp(44px,9vw,92px);line-height:.98;margin:0 0 20px;font-weight:800;letter-spacing:-.03em}
+.hero p.lead{max-width:34em;font-size:clamp(20px,2.6vw,25px);margin:0 0 28px}
+.scale{display:flex;height:14px;border-radius:7px;overflow:hidden;margin:36px 0 10px;position:relative}
+.scale span{flex:1}
+.scale i{position:absolute;left:12%;top:-6px;width:4px;height:26px;background:var(--ink);border-radius:2px}
+.scale-note{font-family:"Bricolage Grotesque",Arial,sans-serif;font-size:14px;color:var(--muted)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:700;font-size:16px;text-decoration:none;border:2px solid var(--teal)}
+.btn.main{background:var(--teal);color:var(--bg)}
+.btn.alt{color:var(--teal)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);margin:0 0 24px;letter-spacing:-.02em;line-height:1.1}
+h3{font-size:22px;margin:0 0 4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+.proj.feature{border-left:8px solid var(--teal)}
+.tag{display:inline-block;font-family:"Bricolage Grotesque",Arial,sans-serif;font-size:14px;font-weight:500;background:var(--chip);border-radius:999px;padding:3px 12px;margin:0 6px 8px 0}
+.meta{color:var(--muted);font-family:"Bricolage Grotesque",Arial,sans-serif;font-size:15px;margin:0 0 12px}
+ul{padding-left:1.1em;margin:8px 0}
+li{margin:6px 0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px 32px}
+.skills h3{font-size:17px;color:var(--teal)}
+.skills p{margin:0}
+.row{display:grid;grid-template-columns:170px 1fr;gap:8px 28px;margin-bottom:28px}
+.row .when{font-family:"Bricolage Grotesque",Arial,sans-serif;color:var(--muted);font-size:15px}
+@media(max-width:640px){.row{grid-template-columns:1fr}body{font-size:18px}}
+footer{padding:40px 0 56px;border-top:1px solid var(--line)}
+.contact a{display:block;margin:6px 0;font-size:20px;overflow-wrap:anywhere}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+  <h1>Sobigasri S</h1>
+  <p class="lead">Computer science student in Coimbatore who builds Java full stack web apps and is learning to apply AI to climate and air-quality problems.</p>
+  <div class="btns">
+    <a class="btn main" href="#projects">See my projects</a>
+    <a class="btn alt" href="#contact">Get in touch</a>
+  </div>
+  <div class="scale" aria-hidden="true"><span style="background:var(--g1)"></span><span style="background:var(--g2)"></span><span style="background:var(--g3)"></span><span style="background:var(--g4)"></span><span style="background:var(--g5)"></span><i></i></div>
+  <div class="scale-note">An air-quality scale, from good to hazardous. It is the idea behind my KYRA hackathon project.</div>
+</header>
+
+<section id="about">
+  <h2>About me</h2>
+  <p>I’m a third-year B.E. Computer Science and Engineering student at Kumaraguru College of Technology. I completed a Java full stack program covering Spring Boot, Hibernate, MySQL and front-end basics, and I’ve worked in Scrum-style teams on academic projects.</p>
+  <p>In August 2026 I took part in Hack for Impact, a 30-hour hackathon on AI for Climate Resilience. I’m looking for a software engineering role where I can build reliable, user-focused applications.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="proj feature">
+      <h3>KYRA</h3>
+      <p class="meta">AI for Climate Resilience · Hackathon team project</p>
+      <span class="tag">AI</span><span class="tag">Air quality</span><span class="tag">Environmental health</span>
+      <p>An environmental-risk assistant concept that uses air quality, a person’s activity, their sensitivity and their route to give guidance that fits their situation.</p>
+      <ul><li>Built as part of a team during Hack for Impact 2026 (GDG on Campus).</li><li>My role: team participant contributing to the concept.</li></ul>
+    </article>
+    <article class="proj">
+      <h3>CampusBite</h3>
+      <p class="meta">Multi-canteen food availability and pre-order system · Academic team project</p>
+      <span class="tag">Agile</span><span class="tag">Scrum</span><span class="tag">Team project</span>
+      <p>A system concept that lets students check food availability across several campus canteens and place pre-orders.</p>
+      <ul><li>Planned work with user stories, sprint planning and task tracking.</li><li>Ran reviews and wrote project documentation as part of the Software Engineering course.</li></ul>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Languages</h3><p>Java, C, Python, JavaScript</p></div>
+    <div><h3>Frontend</h3><p>HTML, CSS, Bootstrap, jQuery, React.js, Tailwind CSS, Figma, wireframing</p></div>
+    <div><h3>Backend</h3><p>Spring Framework, Spring Boot, Hibernate, Node.js, Express.js (basics), Flask, REST APIs, OAuth 2.0, Microsoft Graph API</p></div>
+    <div><h3>Databases</h3><p>SQL, MySQL, MongoDB</p></div>
+    <div><h3>Tools</h3><p>Git, GitHub, Jira, Visual Studio Code, StarUML, Cisco Networking Fundamentals</p></div>
+    <div><h3>Working style</h3><p>Analytical thinking, teamwork, quick learning, problem solving, time management, adaptability</p></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience and training</h2>
+  <div class="row">
+    <div class="when">Jun – Aug 2026<br>Remote</div>
+    <div><h3>Java Full Stack Development Intern</h3><p class="meta">AICTE EduSkills Virtual Internship</p>
+      <ul><li>Completed an 8-week program on front-end development, Core and Advanced Java, Spring Boot, Hibernate and MySQL.</li><li>Finished weekly assessments, assignments, project documentation and a final assessment.</li></ul></div>
+  </div>
+  <div class="row">
+    <div class="when">Aug 2026</div>
+    <div><h3>Hack for Impact 2026</h3><p class="meta">30-hour hackathon on AI for Climate Resilience · GDG on Campus</p><p>Participant on the team behind KYRA.</p></div>
+  </div>
+  <div class="row">
+    <div class="when">Workshops</div>
+    <div><h3>Large Language Model (LLM) Workshop</h3><p class="meta">College workshop participant</p><p>An introduction to LLM concepts and AI applications.</p>
+    <h3 style="margin-top:20px">Cloud Deployment Models and R Programming Workshop</h3><p class="meta">Rathinam Group of Institutions</p></div>
+  </div>
+  <div class="row">
+    <div class="when">Certifications</div>
+    <div><ul><li>Java Full Stack Development, AICTE EduSkills</li><li>Introduction to HTML, Kaggle</li><li>Cloud Deployment Models and R Programming Workshop, Rathinam Group of Institutions</li></ul></div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="row">
+    <div class="when">2024 – 2028<br>(expected)</div>
+    <div><h3>B.E. Computer Science and Engineering</h3><p class="meta">Kumaraguru College of Technology, Coimbatore · CGPA 7.73/10</p></div>
+  </div>
+  <div class="row">
+    <div class="when">2024</div>
+    <div><h3>Higher Secondary (Class XII)</h3><p class="meta">Kongu Kalvi Nilayam, Erode · 96%</p></div>
+  </div>
+  <div class="row">
+    <div class="when">2022</div>
+    <div><h3>SSLC (Class X)</h3><p class="meta">Ashram Matriculation Higher Secondary School · 86%</p></div>
+  </div>
+  <p class="meta">Languages: Tamil, English, German (beginner)</p>
+</section>
+
+<footer id="contact">
+  <h2>Contact</h2>
+  <p>I’m open to software engineering roles and internships. Write to me and I’ll reply.</p>
+  <div class="contact">
+    <a href="mailto:sobigasri19@gmail.com">sobigasri19@gmail.com</a>
+    <a href="https://github.com/Sobigasri" rel="noopener">github.com/Sobigasri</a>
+    <a href="https://www.linkedin.com/in/sobiga-sri-sarangapani-70a991327" rel="noopener">LinkedIn profile</a>
+  </div>
+</footer>
+</div>
+</body>
+</html>
